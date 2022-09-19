@@ -9,7 +9,7 @@ fn shoes_in_size(shoes: Vec<Shoe>, shoe_size: i32) -> Vec<Shoe> {
 }
 
 fn search<'a>(contents: &'a str, search_term: &str) -> Vec<&'a str> {
-    cccontents
+    contents
         .lines()
         .filter(|x| x.contains(search_term))
         .collect()
